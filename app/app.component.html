@@ -26,5 +26,5 @@
     Used Logo Image
   </form>
   <p>Form value: {{ this.imageURL}}</p>
-  <img src="{{ this.imageURL ?? getRandomImages()}}" />
+  <img src="{{ this.imageURL ?? this.defaultImageURL}}" />
 </div>
