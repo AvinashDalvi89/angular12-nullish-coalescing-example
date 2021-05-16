@@ -11,11 +11,10 @@ export class AppComponent {
   form = new FormGroup({
     imageURL: new FormControl()
   });
+  defaultImageURL =
+    "https://cdn.hashnode.com/res/hashnode/image/upload/v1601990703263/zNAZTpEQp.jpeg";
   imageURL;
   changeURL(e) {
     this.imageURL = e.target.value;
-  }
-  getRandomImages() {
-    return "https://cdn.hashnode.com/res/hashnode/image/upload/v1601990703263/zNAZTpEQp.jpeg";
   }
 }
